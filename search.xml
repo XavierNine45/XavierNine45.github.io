@@ -235,6 +235,12 @@ wpm: 275
 <h3 id="结束"><a href="#结束" class="headerlink" title="结束"></a>结束</h3><hr>
 <p>以上内容来自CSDN名叫TomAndersen的博主，在此感谢这位博主的文章解决了我的问题。<br>原文链接：<a href="https://blog.csdn.net/TomAndersen/article/details/104691118">https://blog.csdn.net/TomAndersen/article/details/104691118</a></p>
 ]]></content>
+      <categories>
+        <category>分享（杂）</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+      </tags>
   </entry>
   <entry>
     <title>Hello World</title>
@@ -258,10 +264,6 @@ wpm: 275
       </categories>
       <tags>
         <tag>测试标签</tag>
-        <tag>测试标签1</tag>
-        <tag>测试标签2</tag>
-        <tag>测试标签3</tag>
-        <tag>测试标签4</tag>
       </tags>
   </entry>
   <entry>
@@ -269,18 +271,6 @@ wpm: 275
     <url>/2021/12/13/%E4%B8%8A%E4%BC%A0%E5%9B%BE%E7%89%87/</url>
     <content><![CDATA[<p><img src="/images/image.png" alt="overwrote existing file"></p>
 ]]></content>
-  </entry>
-  <entry>
-    <title>测试图片</title>
-    <url>/2021/12/13/%E6%B5%8B%E8%AF%95%E5%9B%BE%E7%89%87/</url>
-    <content><![CDATA[<h2 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h2><p><img src="/2021/12/13/%E6%B5%8B%E8%AF%95%E5%9B%BE%E7%89%87/1.jpg" alt="图片"></p>
-]]></content>
-      <categories>
-        <category>测试</category>
-      </categories>
-      <tags>
-        <tag>测试</tag>
-      </tags>
   </entry>
   <entry>
     <title>图床测试</title>
@@ -292,7 +282,18 @@ wpm: 275
         <category>测试</category>
       </categories>
       <tags>
-        <tag>测试标签1</tag>
+        <tag>测试</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>测试图片</title>
+    <url>/2021/12/13/%E6%B5%8B%E8%AF%95%E5%9B%BE%E7%89%87/</url>
+    <content><![CDATA[<h2 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h2><p><img src="/2021/12/13/%E6%B5%8B%E8%AF%95%E5%9B%BE%E7%89%87/1.jpg" alt="图片"></p>
+]]></content>
+      <categories>
+        <category>测试</category>
+      </categories>
+      <tags>
         <tag>测试</tag>
       </tags>
   </entry>
