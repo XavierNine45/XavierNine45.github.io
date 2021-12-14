@@ -5,8 +5,8 @@
     <url>/2021/12/14/HTML%E7%AC%94%E8%AE%B0/</url>
     <content><![CDATA[<p>&emsp;&emsp;内容没有顺序，是在学习过程遇到的一些小点，记录下来方便日后有需要时查找</p>
 <hr>
-<h4 id="超链接——target-窗口打开方式"><a href="#超链接——target-窗口打开方式" class="headerlink" title="超链接——target 窗口打开方式:"></a>超链接——target 窗口打开方式:</h4><pre><code>_blank新窗口
-_self自身
+<h4 id="超链接——target-窗口打开方式"><a href="#超链接——target-窗口打开方式" class="headerlink" title="超链接——target 窗口打开方式:"></a>超链接——target 窗口打开方式:</h4><pre><code>target=&quot;_blank&quot; 新窗口  
+target=&quot;_self&quot; 自身
 </code></pre>
 <h4 id="锚点链接"><a href="#锚点链接" class="headerlink" title="锚点链接"></a>锚点链接</h4><p>例：</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;a herf=&quot;#haha&quot;&gt;哈哈&lt;a&gt;</span><br><span class="line">balabalbala</span><br><span class="line">......</span><br><span class="line">balabala</span><br><span class="line">&lt;h3 id=&quot;haha&quot;&gt;哈哈</span><br></pre></td></tr></table></figure>
