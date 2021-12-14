@@ -191,9 +191,49 @@ target=&quot;_self&quot; 自身
       </tags>
   </entry>
   <entry>
-    <title>上传图片</title>
-    <url>/2021/12/13/%E4%B8%8A%E4%BC%A0%E5%9B%BE%E7%89%87/</url>
-    <content><![CDATA[<p><img src="/images/image.png" alt="overwrote existing file"></p>
+    <title>Hexo next主题设置文章字数统计及阅读时间</title>
+    <url>/2021/12/14/Hexo-next%E4%B8%BB%E9%A2%98%E8%AE%BE%E7%BD%AE%E6%96%87%E7%AB%A0%E5%AD%97%E6%95%B0%E7%BB%9F%E8%AE%A1%E5%8F%8A%E9%98%85%E8%AF%BB%E6%97%B6%E9%97%B4/</url>
+    <content><![CDATA[<h2 id="乱七八糟一堆话（本篇起因）"><a href="#乱七八糟一堆话（本篇起因）" class="headerlink" title="乱七八糟一堆话（本篇起因）"></a>乱七八糟一堆话（本篇起因）</h2><p>&nbsp;&nbsp;看到很多人博客文章可以显示字数和阅读时间，感觉蛮有意思的，在网上找教程想自己搞一下，百度一搜出来好多文章都是用hexo-wordcount这个插件。<br>&nbsp;&nbsp;但是其中有一步看不太懂，按照教程中的目录打开文件并没有这个地方。</p>
+<p><img src="/images/%E7%9C%8B%E4%B8%8D%E5%A4%AA%E6%87%82.png" alt="upload successful"></p>
+<p>&nbsp;&nbsp;点开很多篇个人博客、CSDN等几乎都是一摸一样的文章（太卷了）,最后去谷歌终于搜到一位大佬在20年发布的文章解决了问题。记录下来一方面是防止日后若有重新部署的需求又卡在这里可以回顾下（担心找不到大佬的文章），另一方面不知道有没有像我一样遇到问题的人，如果有看到本文希望有所帮助。</p>
+<span id="more"></span>
+
+<h2 id="正片"><a href="#正片" class="headerlink" title="正片"></a>正片</h2><p>&nbsp;&nbsp;首先大佬的的Hexo版本4.2.0，NexT版本 7.7.1；我的Hexo版本5.2.0，Next版本 7.8.0，方法适用于我这个版本。（Hexo版本在git输入hexo -v，next版本在博客根目录\themes\nextpackage.json文件中搜索version即可）<br><strong>自NexT 6.0发行版之后第三方插件hexo-wordcount就被symbols_count_time取缔了，相比之下symbols_count_time没有额外的依赖，性能更加强大</strong></p>
+<hr>
+<h3 id="Step-1-安装插件"><a href="#Step-1-安装插件" class="headerlink" title="Step 1 安装插件"></a>Step 1 安装插件</h3><p>git进入博客根目录下输入如下：  </p>
+<pre><code>npm install hexo-symbols-count-time
+</code></pre>
+<h3 id="Step-2-修改根目录配置文件-config-yml"><a href="#Step-2-修改根目录配置文件-config-yml" class="headerlink" title="Step 2 修改根目录配置文件_config.yml"></a>Step 2 修改根目录配置文件_config.yml</h3><p>随便在一个空白位置添加下面的代码</p>
+<pre><code># 设置博客单词统计
+symbols_count_time:
+# 文章字数统计
+symbols: true
+# 文章阅读时间统计
+time: true
+# 站点总字数统计
+total_symbols: false
+# 站点总阅读时间统计
+total_time: false
+exclude_codeblock: false
+</code></pre>
+<h3 id="Step-3-修改Next目录下配置文件themes-next-config-yml"><a href="#Step-3-修改Next目录下配置文件themes-next-config-yml" class="headerlink" title="Step 3 修改Next目录下配置文件themes/next/_config.yml"></a>Step 3 修改Next目录下配置文件themes/next/_config.yml</h3><pre><code>symbols_count_time:
+# 是否另起一行（true的话不和发表时间等同一行）
+separated_meta: true
+# 首页文章统计数量前是否显示文字描述（本文字数、阅读时长）
+item_text_post: true
+# 页面底部统计数量前是否显示文字描述（站点总字数、站点阅读时长）
+item_text_total: false
+# 平均字长
+awl: 4
+# 每分钟阅读字数
+wpm: 275
+</code></pre>
+<p>前面几条我的版本中本身就有的，最后两条手动添加的</p>
+<h3 id="Step-4-重启Hexo"><a href="#Step-4-重启Hexo" class="headerlink" title="Step 4 重启Hexo"></a>Step 4 重启Hexo</h3><pre><code>hexo clean &amp;&amp; hexo g &amp;&amp; hexo s
+</code></pre>
+<p>一定要clean一下，不然不生效</p>
+<h3 id="结束"><a href="#结束" class="headerlink" title="结束"></a>结束</h3><hr>
+<p>以上内容来自CSDN名叫TomAndersen的博主，在此感谢这位博主的文章解决了我的问题。<br>原文链接：<a href="https://blog.csdn.net/TomAndersen/article/details/104691118">https://blog.csdn.net/TomAndersen/article/details/104691118</a></p>
 ]]></content>
   </entry>
   <entry>
@@ -225,18 +265,10 @@ target=&quot;_self&quot; 自身
       </tags>
   </entry>
   <entry>
-    <title>图床测试</title>
-    <url>/2021/12/13/%E5%9B%BE%E5%BA%8A%E6%B5%8B%E8%AF%95/</url>
-    <content><![CDATA[<p><img src="https://s3.bmp.ovh/imgs/2021/12/d487434fd4083ae9.jpg" alt="1"></p>
-<hr>
+    <title>上传图片</title>
+    <url>/2021/12/13/%E4%B8%8A%E4%BC%A0%E5%9B%BE%E7%89%87/</url>
+    <content><![CDATA[<p><img src="/images/image.png" alt="overwrote existing file"></p>
 ]]></content>
-      <categories>
-        <category>测试</category>
-      </categories>
-      <tags>
-        <tag>测试标签1</tag>
-        <tag>测试</tag>
-      </tags>
   </entry>
   <entry>
     <title>测试图片</title>
@@ -247,6 +279,20 @@ target=&quot;_self&quot; 自身
         <category>测试</category>
       </categories>
       <tags>
+        <tag>测试</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>图床测试</title>
+    <url>/2021/12/13/%E5%9B%BE%E5%BA%8A%E6%B5%8B%E8%AF%95/</url>
+    <content><![CDATA[<p><img src="https://s3.bmp.ovh/imgs/2021/12/d487434fd4083ae9.jpg" alt="1"></p>
+<hr>
+]]></content>
+      <categories>
+        <category>测试</category>
+      </categories>
+      <tags>
+        <tag>测试标签1</tag>
         <tag>测试</tag>
       </tags>
   </entry>
