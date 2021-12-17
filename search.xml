@@ -3,7 +3,7 @@
   <entry>
     <title>HTML笔记</title>
     <url>/2021/12/14/HTML%E7%AC%94%E8%AE%B0/</url>
-    <content><![CDATA[<p>&emsp;&emsp;内容没有顺序，是在学习过程遇到的一些小点，记录下来方便日后有需要时查找</p>
+    <content><![CDATA[<p>&emsp;&emsp;内容没有顺序，顾名思义——笔记，是一篇学习的笔记。根据学习顺序遇到的一些内容，记录下来方便日后有需要时查找</p>
 <hr>
 <h4 id="超链接——target-窗口打开方式"><a href="#超链接——target-窗口打开方式" class="headerlink" title="超链接——target 窗口打开方式:"></a>超链接——target 窗口打开方式:</h4><pre><code>target=&quot;_blank&quot; 新窗口  
 target=&quot;_self&quot; 自身
@@ -182,7 +182,37 @@ target=&quot;_self&quot; 自身
 </tr>
 </tbody></table>
 <p><em><strong>一组多个单选按钮name需相同，否则一组中每个单选钮可同时选</strong></em></p>
-]]></content>
+<h4 id="lt-lable-gt"><a href="#lt-lable-gt" class="headerlink" title="&lt;lable&gt;"></a>&lt;lable&gt;</h4><pre><code>&lt;lable for=&quot;nan&quot;&gt;男&lt;/lable&gt;
+&lt;input type=&quot;radio&quot; name=&quot;sex&quot; id=&quot;nan&quot; /&gt;
+</code></pre>
+<p>&lt;lable&gt;的for属性和相关元素id属性相同  </p>
+<p><label for="sex">男</label> <input type="radio" name="sex" id="sex"> &nbsp;&nbsp;&nbsp;&nbsp;<label for="nv">女</label> <input type="radio" name="sex" id="nv">    </p>
+<h4 id="lt-select-gt"><a href="#lt-select-gt" class="headerlink" title="&lt;select&gt;"></a>&lt;select&gt;</h4><pre><code>&lt;select&gt;
+  &lt;option&gt;选择&lt;/option&gt;
+  &lt;option&gt;1&lt;/option&gt;
+  &lt;option&gt;2&lt;/option&gt;
+  &lt;option&gt;3&lt;/option&gt;
+  &lt;option&gt;4&lt;/option&gt;
+&lt;select&gt;
+</code></pre>
+<select>
+  <option>选择</option>
+  <option>1</option>
+  <option>2</option>
+  <option>3</option>
+  <option>4</option>
+</select>  
+至少包含一个&lt;option>；&lt;option>中写select = "select" 可设置为默认选中
+
+<h4 id="lt-textarea-gt"><a href="#lt-textarea-gt" class="headerlink" title="&lt;textarea&gt;"></a>&lt;textarea&gt;</h4><p>输入内容较多时用&lt;textarea&gt;  </p>
+<pre><code>&lt;textarea cols =&quot;每行字符数&quot; rows=&quot;行数&quot;&gt;
+</code></pre>
+<p>cols和rows一般不会用</p>
+<textarea cols="50" rows="3"></textarea>  
+<p>
+  
+</p><h4 id="其余百度-or-MDN"><a href="#其余百度-or-MDN" class="headerlink" title="其余百度 or MDN"></a>其余<a href="https://www.baidu.com/">百度</a> or <a href="https://developer.mozilla.org/zh-CN/">MDN</a></h4><hr>
+<h3 id="结束"><a href="#结束" class="headerlink" title="结束"></a>结束</h3>]]></content>
       <categories>
         <category>笔记</category>
       </categories>
@@ -267,16 +297,11 @@ wpm: 275
       </tags>
   </entry>
   <entry>
-    <title>上传图片</title>
-    <url>/2021/12/13/%E4%B8%8A%E4%BC%A0%E5%9B%BE%E7%89%87/</url>
-    <content><![CDATA[<p><img src="/images/image.png" alt="overwrote existing file"></p>
-]]></content>
-  </entry>
-  <entry>
     <title>图床测试</title>
     <url>/2021/12/13/%E5%9B%BE%E5%BA%8A%E6%B5%8B%E8%AF%95/</url>
     <content><![CDATA[<p><img src="https://s3.bmp.ovh/imgs/2021/12/d487434fd4083ae9.jpg" alt="1"></p>
 <hr>
+<p><img src="http://r494ihuvo.hb-bkt.clouddn.com/%E6%B5%8B%E8%AF%95%E5%9B%BE%E7%89%87.jpg"></p>
 ]]></content>
       <categories>
         <category>测试</category>
@@ -284,6 +309,12 @@ wpm: 275
       <tags>
         <tag>测试</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>上传图片</title>
+    <url>/2021/12/13/%E4%B8%8A%E4%BC%A0%E5%9B%BE%E7%89%87/</url>
+    <content><![CDATA[<p><img src="/images/image.png" alt="overwrote existing file"></p>
+]]></content>
   </entry>
   <entry>
     <title>测试图片</title>
